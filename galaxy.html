@@ -1,0 +1,327 @@
+<html lang="en, de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>galaxy</title>
+
+    <link rel="icon" href="./image/output-onlinepngtools.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link for icons  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- this is the css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!---this is the javascipt link-->
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+  </head>
+  <body onload="changeImage()">
+    <div class="container">
+      <!-- this part is for header  -->
+      <header>
+        <img src="image/output-onlinepngtools.png" alt="" />
+        <div class="links">
+          <a href="#home">home</a>
+          <a href="#planet">palnet</a>
+          <a href="gallery.html" id="g">gallery ⌄</a>
+          <a href="#faq">FAQs</a>
+          <a href="#contact">contact</a>
+        </div>
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="Search here " />
+          <ion-icon onclick="search()" name="search-outline"></ion-icon>
+        </div>
+        <a href="message" id="message">Send Message</a>
+      </header>
+
+      <!----this is the home part -->
+      <section class="home" id="home">
+        <div class="homeText">
+          <h1>Welcome to the Mysteries of the Galaxy!</h1>
+          <p>
+            Step into the vast wonders of the universe and explore the
+            awe-inspiring beauty of galaxies far beyond our imagination. From
+            the spiraling arms of the Milky Way to the distant, glowing lights
+            of Andromeda, our website is your gateway to understanding the
+            cosmos.
+          </p>
+          <p>
+            Here, we dive deep into the structure, formation, and phenomena of
+            galaxies, bringing you closer to the stars than ever before. Whether
+            you’re a curious stargazer or an avid astronomer, there’s something
+            here for everyone.
+          </p>
+
+          <p>
+            Embark on your cosmic journey, discover the unknown, and let the
+            universe unfold before your eyes!
+          </p>
+        </div>
+        <img name="slide" alt="plant picture" />
+      </section>
+
+      <!-- this part is about planets -->
+
+      <section class="planetSection" id="planet">
+        <div class="planet">
+          <img src="image/earth.png" alt="" />
+          <div class="planetInformation">
+            <p>Name : Earth</p>
+            <p>Speed : 1670 km/hr</p>
+            <p>Sun distance : 149.6 million km</p>
+            <p>Day length : 24 hr</p>
+            <p>temperature : 15°C</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="planet">
+          <img src="image/jupiter.png" alt="" />
+          <div class="planetInformation">
+            <p>Name : Jupiter</p>
+            <p>Speed : 45300 km/hr</p>
+            <p>Sun distance : 778.5 million km</p>
+            <p>Day length : 10 hr</p>
+            <p>temperature : -110°C</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="planet">
+          <img src="image/uranus.png" alt="" />
+          <div class="planetInformation">
+            <p>Name : Uranus</p>
+            <p>Speed : 9000 km/hr</p>
+            <p>Sun distance : 2.87 billion km</p>
+            <p>Day length : 17 hr</p>
+            <p>temperature : -195°C</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="planet">
+          <img src="image/mercury.png" alt="" />
+          <div class="planetInformation">
+            <p>Name : Mercury</p>
+            <p>Speed : 174 km/hr</p>
+            <p>Sun distance : 57.9 million km</p>
+            <p>Day length : 1408 hr</p>
+            <p>temperature : 167°C</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="planet">
+          <img src="image/mars.png" alt="" />
+          <div class="planetInformation">
+            <p>Name : Mars</p>
+            <p>Speed : 868 km/hr</p>
+            <p>Sun distance : 227.9 million km</p>
+            <p>Day length : 25 hr</p>
+            <p>temperature : -60°C</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+        <!-- <div class="planet">
+          <img src="./image/pluto.png" alt="" />
+          <div class="planetInformation">
+            <p>Name : Pluto</p>
+            <p>Speed :  km/hr</p>
+            <p>Sun distance :  million km</p>
+            <p>Day length : 1408 hr</p>
+            <p>temperature : 167°C</p>
+            <a href="#">Read More</a>
+          </div>
+        </div> -->
+
+        <div class="planet">
+          <img src="image/saturn.png" alt="" />
+          <div class="planetInformation">
+            <p>Name : Saturn</p>
+            <p>Speed : 35500 km/hr</p>
+            <p>Sun distance : 1.43 billion km</p>
+            <p>Day length : 11 hr</p>
+            <p>temperature : -140°C</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="planet">
+          <img src="image/venus.png" alt="" />
+          <div class="planetInformation">
+            <p>Name : Venus</p>
+            <p>Speed : 6.5 km/hr</p>
+            <p>Sun distance : 108.2 million km</p>
+            <p>Day length : 5832 hr</p>
+            <p>temperature : 475°C</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="planet">
+          <img src="image/neptune.png" alt="" />
+          <div class="planetInformation">
+            <p>Name : Neptune</p>
+            <p>Speed : 9600 km/hr</p>
+            <p>Sun distance : 4.50 billion km</p>
+            <p>Day length : 16 hr</p>
+            <p>temperature : -218°C</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- this part belongs to the faq  -->
+      <section class="faqSection" id="faq">
+        <h1>the frequently asked questions</h1>
+
+        <div class="faqMain">
+          <div class="faqDiv">
+            <div class="question">
+              <p>how are you man ?</p>
+              <ion-icon name="chevron-down-outline" id="tobtn"></ion-icon>
+            </div>
+            <div class="answer" id="as">
+              <p>
+                ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddLorem
+                ipsum dolor sit amet consectetur adipisicing elit. Quos optio
+                tenetur laudantium, facilis incidunt est eveniet. Rerum
+                doloremque, fugiat sit animi vel unde corporis provident, vitae
+                necessitatibus minus neque libero!
+              </p>
+              <a
+                href="https://www.wtamu.edu/~cbaird/sq/2019/02/24/can-a-star-turn-into-a-planet/"
+                >More Information</a
+              >
+            </div>
+          </div>
+          <div class="faqDiv">
+            <div class="question">
+              <p>Can a star turn into a planet?</p>
+              <ion-icon name="chevron-down-outline" onclick="show()"></ion-icon>
+            </div>
+            <div class="answer" id="answer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                optio tenetur laudantium, facilis incidunt est eveniet. Rerum
+                doloremque, fugiat sit animi vel unde corporis provident, vitae
+                necessitatibus minus neque libero!
+              </p>
+              <a
+                href="https://www.wtamu.edu/~cbaird/sq/2019/02/24/can-a-star-turn-into-a-planet/"
+                >More Information</a
+              >
+            </div>
+          </div>
+          <div class="faqDiv">
+            <div class="question">
+              <p>how are you man ?</p>
+              <ion-icon name="chevron-down-outline" onclick="show()"></ion-icon>
+            </div>
+            <div class="answer" id="answer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                optio tenetur laudantium, facilis incidunt est eveniet. Rerum
+                doloremque, fugiat sit animi vel unde corporis provident, vitae
+                necessitatibus minus neque libero!
+              </p>
+            </div>
+          </div>
+          <div class="faqDiv">
+            <div class="question"  onclick="() => alert('you have clicked the button!')">
+              <p>your account is very good ?</p>
+              <ion-icon name="chevron-down-outline" onclick="show()"></ion-icon>
+            </div>
+            <div class="answer" id="answer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                optio tenetur laudantium, facilis incidunt est eveniet. Rerum
+                doloremque, fugiat sit animi vel unde corporis provident, vitae
+                necessitatibus minus neque libero!
+              </p>
+            </div>
+          </div>
+          <div class="faqDiv">
+            <div class="question">
+              <p>how are you man ?</p>
+              <ion-icon name="chevron-down-outline" onclick="show()"></ion-icon>
+            </div>
+            <div class="answer" id="answer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                optio tenetur laudantium, facilis incidunt est eveniet. Rerum
+                doloremque, fugiat sit animi vel unde corporis provident, vitae
+                necessitatibus minus neque libero!
+              </p>
+            </div>
+          </div>
+          <div class="faqDiv">
+            <div class="question">
+              <p>how are you man ?</p>
+              <ion-icon name="chevron-down-outline" onclick="show()"></ion-icon>
+            </div>
+            <div class="answer" id="answer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                optio tenetur laudantium, facilis incidunt est eveniet. Rerum
+                doloremque, fugiat sit animi vel unde corporis provident, vitae
+                necessitatibus minus neque libero!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- this part is about contact section  -->
+      <section class="contact_section">
+        <h1>Message</h1>
+        <div class="contact_div">
+          <div class="contact_image">
+            <img src="image/contact.png" alt="contact photo">
+          </div>
+          <div class="contact_form">
+            <div>
+              <input type="text">
+              <label for="name">Name</label>
+            </div>
+            <div>
+              <input type="text">
+              <label for="lastName">Last Name</label>
+            </div>
+            <div>
+              <input type="text">
+              <label for="email">Email</label>
+            </div>
+            <div>
+              <textarea name="message" id="Message"></textarea>
+              <label for="message">Message</label>
+              </div>
+            <div class="sendMessage">
+              <input type="button" value="Send">
+              <ion-icon name="send-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+  </body>
+</html>
